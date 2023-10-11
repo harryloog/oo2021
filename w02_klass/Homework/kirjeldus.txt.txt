@@ -1,0 +1,13 @@
+Klass Pet tekitab nii palju Klass Animal liikmneid, kui kasutaja soovib.
+Neile antakse nimed, liigid ja sugu.
+Tsüklis küsitakse, kas kasutaja soovib atribuute muuta, neid vaadata.
+Trükkides "quit" väljub.
+
+
+Set, Map, List
+
+Vectorit  kasutatakse, kui on vaja lisada liikmeid suvalisse kohta listis või kui on vaja, et eemaldatud liikmed liigutaksid kõik liikmed ettepoole.
+
+Seti kasutatakse korduvate liikmete vältimiseks, kui antakse sisendeid.
+
+Map sobib väärtusepaaride või väärtuste identifikaatorite salvestamiseks. 

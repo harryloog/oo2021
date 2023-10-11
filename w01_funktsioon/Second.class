@@ -1,0 +1,56 @@
+public class Second {
+
+    public static void main(String[] args) {
+        System.out.println(myName())
+        System.out.println(add(5, 10))
+        System.out.println(fullName("Reimo", "Pregel"))
+        System.out.println(checkEqual(5, 5))
+        System.out.println(notEqual(4,4))
+    }
+    myMath();
+    myLogical();
+    areStringEqual();
+    
+    public static String myName(){
+        return "Reimo";
+    }
+    public static int add(int number1, int number2) {
+        return number1 + number2;
+        
+    }
+    public static void fullName(String firstName, String lastName) {
+        return firstName + " " + lastName + "!";
+    }
+    public static boolean checkEqual(int number1, int number2) {}
+    return number1 == number2
+    }
+    public static boolean notEqual(int number1, int number2) {
+        return number1 != number2;
+
+    public static void myMath(){
+        System.out.println(Math.pow(5, 2));
+
+        int number = /*(int)*/ Math.pow(5, 2);
+        System.out.println(Math.sqrt(9));
+    }
+    public static void myLogical(){
+        System.out.println(5 < 10 && 5 > 4);
+        System.out.println(6 > 8 || 3 == 3);
+
+    }
+
+    public static void areStringEqual() {
+        String name1 = "Harry";
+        String name2 = "Harry";
+
+        String newName1 = new String("Harry")
+        String newName2 = new String("Harry")
+        
+        System.out.println(newName1 == newName2);
+
+        String[] stringArray = new String[]{"Hello!"}
+        System.out.println(newName1.equals(newName2));
+    }
+        
+    
+}

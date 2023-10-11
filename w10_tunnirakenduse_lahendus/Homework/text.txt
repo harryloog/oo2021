@@ -1,0 +1,13 @@
+@AutoWired - kui luuakse class, lisatakse autowired osa ka sisse.
+@Controller - kontrolleri komponenet
+@Repository - andmebaasi element
+@GetMapping - veebilehe get funktsioon
+@PostMapping - veebilehe post funktsioon
+@RequestParam -  loeb muutuja URI muutujatest /baas?id=502
+@PathVariable - loeb URI aadressis muutuja, nt /baas/502
+@Valid - Valideerib elemendi
+
+DAO - andmbaasi päringuid vahendav objekt
+JPA - java standard objektide alvestamiseks andmebaasi
+CRUD - andmebaasi kirje loomine, lugemine, uuendamine aj kustutamine
+H2 - andmebaas veebilhele

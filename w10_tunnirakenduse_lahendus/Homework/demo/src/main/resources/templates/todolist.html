@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+</head>
+<body>
+</head>
+<body>
+    <div th:switch="${todos}">
+      <h2 th:case="null">No tasks</h2>
+      <div th:case="*">
+        <table>
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Done</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="todo : ${todos}">
+              <td th:text="${todo.name}"></td>
+              <td th:text="${todo.done}"></td>
+              <td><a th:href="@{/edit/{id}(id=${todo.id})}">Edit</a></td>
+              <td><a th:href="@{/delete/{id}(id=${todo.id})}">Delete</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p><a href="/addpage">Add a new task</a></p>
+  </body>
+</body>
+</html>

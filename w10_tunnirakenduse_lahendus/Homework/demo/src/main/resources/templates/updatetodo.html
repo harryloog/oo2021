@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+</head>
+<body>
+    <h1>Update</h1>
+    <form action="#" th:action="@{/update/{id}(id=${todo.id})}" th:object="${todo}" method="post">
+        <label for="name">Name</label>
+        <input th:field="*{name}" type="text" name="name" id="name">
+        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span><br/>
+        <label for="done">Done</label><br>
+        <input th:field="*{done}" type="radio" name="done" id="done" value="true"><br>
+        <label for="notdone">Not done</label><br>
+        <input th:field="*{done}" type="radio" name="done" id="notdone" value="false">
+        <span th:if="${#fields.hasErrors('done')}" th:errors="*{done}"></span><br/>
+        <button type="submit">Update task</button>
+    </form>
+</body>
+</html>
